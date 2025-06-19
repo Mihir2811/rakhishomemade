@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff7e5;
+    margin: 0;
+    color: #5f3c1e;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #fff7e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  #menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #fff7e5;
+    padding: 1rem;
+  }
+  
+  #nav-menu a {
+    text-decoration: none;
+    color: #5f3c1e;
+    padding: 0.5rem 0;
+  }
+  
+  #nav-menu.active {
+    display: flex;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #ed9699;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #5f3c1e;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn:hover {
+    background: #e27250;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .menu .item {
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials p {
+    text-align: center;
+    margin: 1rem 0;
+    background: #fff0f0;
+    padding: 1rem;
+    border-left: 4px solid #e27250;
+    border-radius: 10px;
+  }
+  
+  .gallery .grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 0.75rem;
+    border: 2px solid #e27250;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fff0f0;
+    color: #5f3c1e;
+  }
+  
+  /* Optional for larger screens */
+  @media (min-width: 768px) {
+    #nav-menu {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      position: static;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  }
+  
